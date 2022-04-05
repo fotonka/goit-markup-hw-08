@@ -1,0 +1,276 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+
+<head>
+	<title>portfolio</title>
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- Кодировка страницы -->
+	<meta charset="UTF-8">
+	<!-- Адаптив -->
+	<meta name="viewport" content="width=device-width">
+	<!--Шрифты -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header-container">
+			<a href="./index.html" class="logo logo-header">
+				Web<span class="logo-span">Studio</span>
+			</a>
+			<nav class="header-nav">
+				<ul class="header-list nav">
+					<li class="header-list__li"><a href="./index.html" class="header-list__item">Студия</a></li>
+					<li class="header-list__li"><a href="./portfolio.html" class="header-list__item current">Портфолио</a></li>
+					<li class="header-list__li"><a href="#" class="header-list__item">Контакты</a></li>
+				</ul>
+			</nav>
+			<ul class="header-contacts">
+				<li class="header-contacts__li">
+					<a href="#" class="header-contacts__item">
+						<svg width="16" height="10" class="mail-icon">
+							<use href="./images/icons.svg#icon-email"></use>
+						</svg>
+						info@devstudio.com</a>
+				</li>
+				<li class="header-contacts__li">
+					<a href="#" class="header-contacts__item">
+						<svg width="18" height="14" class="mail-icon">
+							<use href="./images/icons.svg#icon-phone"></use>
+						</svg>
+						+38 096 111 11 11</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="shop section">
+			<div class="container">
+				<ul class="filter">
+					<li class="filter__li">
+						<button class="filter__item active">Все</button>
+					</li>
+					<li class="filter__li">
+						<button class="filter__item">Веб-сайты</button>
+					</li>
+					<li class="filter__li">
+						<button class="filter__item">Приложения</button>
+					</li>
+					<li class="filter__li">
+						<button class="filter__item">Дизайн</button>
+					</li>
+					<li class="filter__li">
+						<button class="filter__item">Маркетинг</button>
+					</li>
+				</ul>
+
+				<ul class="shop-list">
+					<li class="shop-list__li">
+						<a href="#" class="shop-list__item">
+							<div class="shop-thumb">
+								<img class="shop-thumb__img" width="370" height="294" src="./images/portfolio/img1.jpg"
+									alt="Ноутбук">
+								<p class="shop-thumb__hover">
+									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+								</p>
+							</div>
+							<div class="item-div">
+								<h3 class="item-div__title">Технокряк</h3>
+								<p class="item-div__text">Веб-сайт</p>
+							</div>
+						</a>
+					</li>
+					<li class="shop-list__li">
+						<a href="#" class="shop-list__item">
+							<div class="shop-thumb">
+								<img width="370" height="294" src="./images/portfolio/img2.jpg" alt="Постер">
+								<p class="shop-thumb__hover">
+									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+								</p>
+							</div>
+							<div class="item-div">
+								<h3 class="item-div__title">Постер New Orlean vs Golden Star</h3>
+								<p class="item-div__text">Дизайн</p>
+							</div>
+						</a>
+					</li>
+					<li class="shop-list__li">
+						<a href="#" class="shop-list__item">
+							<div class="shop-thumb">
+								<img width="370" height="294" src="./images/portfolio/img3.jpg" alt="Ресторан">
+								<p class="shop-thumb__hover">
+									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+								</p>
+							</div>
+							<div class="item-div">
+								<h3 class="item-div__title">Ресторан Seafood</h3>
+								<p class="item-div__text">Приложение</p>
+							</div>
+						</a>
+					</li>
+					<li class="shop-list__li">
+						<a href="#" class="shop-list__item">
+							<div class="shop-thumb">
+								<img width="370" height="294" src="./images/portfolio/img4.jpg" alt="Наушники">
+								<p class="shop-thumb__hover">
+									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+								</p>
+							</div>
+							<div class="item-div">
+								<h3 class="item-div__title">Проект Prime</h3>
+								<p class="item-div__text">Маркетинг</p>
+							</div>
+						</a>
+					</li>
+					<li class="shop-list__li">
+						<a href="#" class="shop-list__item">
+							<div class="shop-thumb">
+								<img width="370" height="294" src="./images/portfolio/img5.jpg" alt="Посылки">
+								<p class="shop-thumb__hover">
+									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+								</p>
+							</div>
+							<div class="item-div">
+								<h3 class="item-div__title">Проект Boxes</h3>
+								<p class="item-div__text">Приложение</p>
+							</div>
+						</a>
+					</li>
+					<li class="shop-list__li">
+						<a href="#" class="shop-list__item">
+							<div class="shop-thumb">
+								<img width="370" height="294" src="./images/portfolio/img6.jpg" alt="Монитор">
+								<p class="shop-thumb__hover">
+									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+								</p>
+							</div>
+							<div class="item-div">
+								<h3 class="item-div__title">Inspiration has no Borders</h3>
+								<p class="item-div__text">Веб-сайт</p>
+							</div>
+						</a>
+					</li>
+					<li class="shop-list__li">
+						<a href="#" class="shop-list__item">
+							<div class="shop-thumb">
+								<img width="370" height="294" src="./images/portfolio/img7.jpg" alt="Книга">
+								<p class="shop-thumb__hover">
+									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+								</p>
+							</div>
+							<div class="item-div">
+								<h3 class="item-div__title">Издание Limited Edition</h3>
+								<p class="item-div__text">Дизайн</p>
+							</div>
+						</a>
+					</li>
+					<li class="shop-list__li">
+						<a href="#" class="shop-list__item">
+							<div class="shop-thumb">
+								<img width="370" height="294" src="./images/portfolio/img8.jpg" alt="Бирка">
+								<p class="shop-thumb__hover">
+									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+								</p>
+							</div>
+							<div class="item-div">
+								<h3 class="item-div__title">Проект LAB</h3>
+								<p class="item-div__text">Маркетинг</p>
+							</div>
+						</a>
+					</li>
+					<li class="shop-list__li">
+						<a href="#" class="shop-list__item">
+							<div class="shop-thumb">
+								<img width="370" height="294" src="./images/portfolio/img9.jpg" alt="Сайт">
+								<p class="shop-thumb__hover">
+									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
+									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+								</p>
+							</div>
+							<div class="item-div">
+								<h3 class="item-div__title">Growing Business</h3>
+								<p class="item-div__text">Приложение</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container-footer">
+				<div class="footer-block">
+					<a href="#" class="footer-block__title"><span class="footer-block__span">Web</span>Studio</a>
+					<address class="footer-block__address">г. Киев, пр-т Леси Украинки, 26</address>
+					<a href="#" class="footer-block__email">info@example.com</a>
+					<a href="#" class="footer-block__tel">+38 099 111 11 11</a>
+				</div>
+
+				<div class="footer-block2">
+					<p class="footer-block2__text">Присоеденяйтесь</p>
+					<ul class="block2-list">
+						<li class="block2-list__li">
+							<button class="block2-list__soc">
+								<svg class="block2-list__svg" width="20px" height="20px">
+									<use href="./images/icons.svg#icon-instagram"></use>
+								</svg>
+							</button>
+						</li>
+						<li class="block2-list__li">
+							<button class="block2-list__soc">
+								<svg class="block2-list__svg" width="20px" height="20px">
+									<use href="./images/icons.svg#icon-twitter"></use>
+								</svg>
+							</button>
+						</li>
+						<li class="block2-list__li">
+							<button class="block2-list__soc">
+								<svg class="block2-list__svg" width="20px" height="20px">
+									<use href="./images/icons.svg#icon-facebook"></use>
+								</svg>
+							</button>
+						</li>
+						<li class="block2-list__li">
+							<button class="block2-list__soc">
+								<svg class="block2-list__svg" width="20px" height="20px">
+									<use href="./images/icons.svg#icon-linkedin"></use>
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-block3">
+					<p class="footer-block3__text">Подпишитесь на рассылку</p>
+					<form class="footer-block3__form">
+						<input type="footer-block3__email" class="footer-block3__input" placeholder="E-mail">
+						<button class="btn footer-btn" type="submit">Подписаться
+							<svg class="footer-block3__btnicon">
+								<use href="./images/icons.svg#icon-telegram1"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+
+		</div>
+	</footer>
+</body>
+
+</html>

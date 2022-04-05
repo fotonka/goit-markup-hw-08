@@ -1,0 +1,34 @@
+@import "utils/variables";
+@import "components/header";
+@import "components/nullstyle";
+@import "components/recuring";
+@import "components/hero";
+@import "components/benefits";
+@import "components/devices";
+@import "components/team";
+@import "components/clients";
+@import "components/footer";
+@import "components/backdrop";
+@import "components/filter";
+@import "components/shop";
+
+body {
+	font-family: $mainFont;
+	color: $mainColor;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+}
+
+.color {
+	background-color: $secondaryLightColor;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.section {
+	padding: 94px 0;
+}
