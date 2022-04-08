@@ -25,29 +25,47 @@
 			<a href="./index.html" class="logo logo-header">
 				Web<span class="logo-span">Studio</span>
 			</a>
-			<nav class="header-nav">
-				<ul class="header-list nav">
-					<li class="header-list__li"><a href="./index.html" class="header-list__item current">Студия</a></li>
-					<li class="header-list__li"><a href="./portfolio.html" class="header-list__item">Портфолио</a></li>
-					<li class="header-list__li"><a href="#" class="header-list__item">Контакты</a></li>
-				</ul>
-			</nav>
-			<ul class="header-contacts">
-				<li class="header-contacts__li">
-					<a href="#" class="header-contacts__item">
-						<svg width="16" height="10" class="mail-icon">
-							<use href="./images/icons.svg#icon-email"></use>
-						</svg>
-						info@devstudio.com</a>
-				</li>
-				<li class="header-contacts__li">
-					<a href="#" class="header-contacts__item">
-						<svg width="18" height="14" class="mail-icon">
-							<use href="./images/icons.svg#icon-phone"></use>
-						</svg>
+
+			<button type="button" class="menu-button" data-menu-button>
+				<svg aria-label="переключатель мобильного меню" width="40" height="40">
+					<use class="icon-menu" href="/images/icons.svg#icon-header-menu"></use>
+					<use class="icon-cross" href="/images/icons.svg#icon-header-cross"></use>
+				</svg>
+			</button>
+
+			<div class="menu-container" data-menu>
+				<nav class="header-nav">
+					<ul class="header-list__nav">
+						<li class="header-list__li"><a href="./index.html" class="header-list__item current">Студия</a></li>
+						<li class="header-list__li"><a href="./portfolio.html" class="header-list__item ">Портфолио</a></li>
+						<li class="header-list__li"><a href="#" class="header-list__item">Контакты</a></li>
+					</ul>
+				</nav>
+				<ul class="header-contacts">
+					<li class="header-contacts__li first">
+						<a href="#" class="header-contacts__item chosen">
+							<svg width="16" height="10" class="mail-icon">
+								<use href="./images/icons.svg#icon-email"></use>
+							</svg>
+							info@devstudio.com
+							</a>
+					</li>
+					<li class="header-contacts__li last">
+						<a href="#" class="header-contacts__item">
+							<svg width="18" height="14" class="mail-icon">
+								<use href="./images/icons.svg#icon-phone"></use>
+							</svg>
 						+38 096 111 11 11</a>
-				</li>
-			</ul>
+					</li>
+				</ul>
+				<ul class="header-soc">
+					<li class="header-soc__li"><a href="#" class="header-soc__item">Instagram</a></li>
+					<li class="header-soc__li"><a href="#" class="header-soc__item">Twitter</a></li>
+					<li class="header-soc__li"><a href="#" class="header-soc__item">Facebook</a></li>
+					<li class="header-soc__li"><a href="#" class="header-soc__item">LinkedIn</a></li>
+				</ul>
+			</div>
+
 		</div>
 	</header>
 
@@ -148,8 +166,8 @@
 			<div class="container">
 				<h2 class="team-title">Наша команда</h2>
 				<ul class="team-list">
-					<li class="team-list__ihor worker worker">
-						<img src="./images/people_1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+					<li class="team-list__ihor worker">
+						<img class="team__img" src="./images/people_1.jpg" alt="Игорь Демьяненко" width="270" height="260">
 						<div class="team-list__div">
 							<p class="team-list__name">Игорь Демьяненко</p>
 							<p class="team-list__position">Product Designer</p>
@@ -186,8 +204,8 @@
 						</div>
 					</li>
 
-					<li class="team-list__olha worker worker">
-						<img src="./images/people_2.jpg" alt="Ольга Репина" width="270" height="260">
+					<li class="team-list__olha worker">
+						<img class="team__img" src="./images/people_2.jpg" alt="Ольга Репина" width="270" height="260">
 						<div class="team-list__div">
 							<p class="team-list__name">Ольга Репина</p>
 							<p class="team-list__position">Frontend Developer</p>
@@ -225,7 +243,7 @@
 					</li>
 
 					<li class="team-list__nikolai worker">
-						<img src="./images/people_3.jpg" alt="Николай Тарасов" width="270" height="260">
+						<img class="team__img" src="./images/people_3.jpg" alt="Николай Тарасов" width="270" height="260">
 						<div class="team-list__div">
 							<p class="team-list__name">Николай Тарасов</p>
 							<p class="team-list__position">Marketing</p>
@@ -263,7 +281,7 @@
 					</li>
 
 					<li class="team-list__mikhail worker">
-						<img src="./images/people_4.jpg" alt="Михаил Ермаков" width="270" height="260">
+						<img class="team__img" src="./images/people_4.jpg" alt="Михаил Ермаков" width="270" height="260">
 						<div class="team-list__div">
 							<p class="team-list__name">Михаил Ермаков</p>
 							<p class="team-list__position">UI Designer</p>
@@ -421,44 +439,45 @@
 			</button>
 				<p class="modal-container__title">Оставьте свои данные, мы вам перезвоним</p>
 				<form class="modal-form">
-								<label class="modal-form__name">Имя
-									<input type="text" class="modal-form__input">
-									<svg class="modal-form__icon">
-										<use href="./images/icons.svg#icon-human-modal"></use>
-									</svg>
-								</label>
+					<label class="modal-form__name">Имя
+						<input type="text" class="modal-form__input">
+						<svg class="modal-form__icon">
+							<use href="./images/icons.svg#icon-human-modal"></use>
+						</svg>
+					</label>
 	
-								<label class="modal-form__name">Телефон
-									<input type="text" class="modal-form__input">
-									<svg class="modal-form__icon">
-										<use href="./images/icons.svg#icon-phone-modal"></use>
-									</svg>
-								</label>
+					<label class="modal-form__name">Телефон
+						<input type="text" class="modal-form__input">
+						<svg class="modal-form__icon">
+							<use href="./images/icons.svg#icon-phone-modal"></use>
+						</svg>
+					</label>
 	
-								<label class="modal-form__name">Почта
-									<input type="text" class="modal-form__input">
-									<svg class="modal-form__icon">
-										<use href="./images/icons.svg#icon-email-modal"></use>
-									</svg>
-								</label>
+					<label class="modal-form__name">Почта
+						<input type="text" class="modal-form__input">
+						<svg class="modal-form__icon">
+							<use href="./images/icons.svg#icon-email-modal"></use>
+						</svg>
+					</label>
 	
-								<div class="last-field">
-									<label class="modal-form__name">Комментарий
-										<textarea placeholder="Введите текст" class="modal-form__textarea"></textarea>
-									</label>
-								</div>
+					<div class="last-field">
+						<label class="modal-form__name">Комментарий
+							<textarea placeholder="Введите текст" class="modal-form__textarea"></textarea>
+						</label>
+					</div>
 	
-								<label class="agree">
-									<input type="checkbox" class="agree__checkbox" name="agree">
-									<span class="agree__checkbox-icon"></span>
-									Соглашаюсь с рассылкой и принимаю <a href="#" class="agree__span">Условия договора</a>
-								</label>
-								<button class=" modal-btn" type="submit">Отправить</button>
+					<label class="agree">
+						<input type="checkbox" class="agree__checkbox" name="agree">
+						<span class="agree__checkbox-icon"></span>
+						Соглашаюсь с рассылкой и принимаю <a href="#" class="agree__span">Условия договора</a>
+					</label>
+					<button class=" modal-btn" type="submit">Отправить</button>
 				</form>
 		</div>
 	</div>
 
 	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

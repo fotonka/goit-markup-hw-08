@@ -1,54 +1,89 @@
 .header {
 	border-bottom: 1px solid $borderColor;
+	position: relative;
 }
 
-.header-container {
+.header-container{
 	display: flex;
-	align-items: center;
 }
 
-.container {
-	width: 1200px;
-	padding: 0 15px;
-	margin: 0 auto;
-}
+.menu-container{
+	@media(max-width: 767px){
+		z-index: 1;
+		display: none;
+		background-color: $mainLightColor;
+		position: absolute;
+		left: 0;
+		width: 100vw;
+		margin: 0 auto;
+		height: 100vh;
+		padding: 48px 40px;
+		&.is-open{
+			display: block;
+		}
+	}
 
-.logo-header {
-	padding: 24px 0;
+	@media(min-width: 768px){
+		display: flex;
+	}
 }
 
 .logo {
 	color: $accentColor;
 	font-weight: 700;
 	font-family: $secondaryFont;
-	font-size: 26px;
+	font-size: 24px;
 	letter-spacing: 0.03em;
 	line-height: 1.19;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	padding: 24px 0;
+
+	@media(min-width: 768px){
+		margin-right: 88px;
+	}
 }
 
 .logo-span {
 	color: $mainColor;
 }
 
-.header-nav {
-	margin-left: 93px;
+.header-nav{
+	@media(max-width: 767px){
+		margin-bottom: 200px;
+	}
+
+	@media(min-width: 768px){
+		display: flex;
+		align-items: center;
+		margin-right: 60px;
+	}
 }
 
-.header-list {
-	display: flex;
+.header-list__nav{
+	@media(min-width: 768px){
+		display: flex;
+	}
 }
 
-.header-list__li {
-	font-weight: 500;
-	&:not(:last-child) {
-		margin-right: 50px;
+.header-list__li{
+	@media (max-width: 767px){
+		&:not(:last-child){
+			margin-bottom: 32px;
+		}
+	}
+
+	@media(min-width: 768px){
+		&:not(:last-child){
+			margin-right: 50px;
+		}
 	}
 }
 
 .header-list__item {
+	font-weight: 500;
 	position: relative;
-	padding-top: 32px;
-	padding-bottom: 32px;
 	color: $mainColor;
 	transition: background-color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover {
@@ -60,45 +95,61 @@
 		color: $accentColor;
 		
 	}
+	@media (max-width: 767px){
+		font-size: 40px;
+	}
+	@media(min-width: 768px){
+		padding: 32px 0;
+	}
 }
 
 .current {
 	color: $accentColor;
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: 0px;
-		left: 0;
-		height: 4px;
-		width: 100%;
-		background-color: $accentColor;
-		border-radius: 2px;
-		transition: background-color, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@media (min-width: 768px){
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: 0;
+			height: 4px;
+			width: 100%;
+			background-color: $accentColor;
+			border-radius: 2px;
+			transition: background-color, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
 	}
 }
 
 .header-contacts {
-	display: flex;
-	margin-left: auto;
-	padding: 0;
-	margin-top: 0;
-	margin-bottom: 0;
+	@media (min-width: 768px){
+		margin-left: auto;
+		padding: 19px 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 .header-contacts__li {
-	&:first-child {
-		margin-right: 50px;
-		display: flex;
+	@media (max-width: 767px){
+		&:first-child {
+			margin-bottom: 32px;
+		}
 	}
+	@media (min-width: 1200px){
+		&:first-child {
+			margin-right: 50px;
+			display: flex;
+		}
+	}
+}
+
+.first{
+	margin-bottom: 10px;
 }
 
 .header-contacts__item {
 	font-weight: 500;
 	color: $secondaryTextColor;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	display: flex;
-	align-items: center;
 	transition: background-color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover {
 		color: $accentColor;
@@ -109,9 +160,89 @@
 		color: $accentColor;
 		box-shadow: none;
 	}
+	@media (max-width: 767px){
+		font-size: 24px;
+	}
+}
+
+.header-soc{
+	display: flex;
+
+	@media(min-width: 768px){
+		display: none;
+	}
+}
+
+.header-soc__li{
+	padding: 0 10px;
+	&:not(:last-child){
+		border-right: 1px solid rgba(33,33,33,0.2);
+	}
+	&:first-child{
+		padding-left: 0;
+	}
+	&:last-child{
+		padding-right: 0;
+	}
+}
+
+.header-soc__item{
+	font-size: 18px;
+	font-weight: 500;
+	color: $accentColor;
+}
+
+.chosen{
+	@media (max-width: 767px){
+		font-size: 34px;
+	}
+}
+
+.last{
+	@media (max-width: 767px){
+		margin-bottom: 64px;
+	}
 }
 
 .mail-icon {
 	fill: currentColor;
-	margin-right: 10px;
+	@media (max-width: 767px){
+		display: none;
+	}
+}
+
+/*---------------menu---------------*/
+
+.header-menu__button{
+	position: absolute;
+	top: 21px;
+	right: 15px;
+	background-color: $mainLightColor;
+}
+
+.menu-button{
+	z-index: 10;
+	margin: 0;
+	padding: 10px 0;
+	background-color: transparent;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:focus{
+		fill: $accentColor;
+	}
+
+	@media(min-width: 768px){
+		display: none;
+	}
+}
+
+.menu-button .icon-cross{
+	display: none;
+}
+
+.menu-button.is-open .icon-cross{
+	display: block;
+}
+
+.menu-button.is-open .icon-menu{
+	display: none;
 }

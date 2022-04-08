@@ -1,4 +1,7 @@
 .devices-section{
+	@media (max-width: 767px){
+		display: none;
+	}
 	padding-bottom: 94px;
 }
 
@@ -7,12 +10,16 @@
 	font-weight: 700;
 	text-align: center;
 	line-height: 1.16;
-	margin-bottom: 50px;
+	@media (min-width: 768px){
+		margin-bottom: 50px;
+	}
 }
 
 .devices-list {
-	display: flex;
-	justify-content: space-between;
+	@media (min-width: 768px){
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .devices-list__device-thumb {

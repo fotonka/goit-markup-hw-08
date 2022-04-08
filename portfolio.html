@@ -25,29 +25,47 @@
 			<a href="./index.html" class="logo logo-header">
 				Web<span class="logo-span">Studio</span>
 			</a>
-			<nav class="header-nav">
-				<ul class="header-list nav">
-					<li class="header-list__li"><a href="./index.html" class="header-list__item">Студия</a></li>
-					<li class="header-list__li"><a href="./portfolio.html" class="header-list__item current">Портфолио</a></li>
-					<li class="header-list__li"><a href="#" class="header-list__item">Контакты</a></li>
-				</ul>
-			</nav>
-			<ul class="header-contacts">
-				<li class="header-contacts__li">
-					<a href="#" class="header-contacts__item">
-						<svg width="16" height="10" class="mail-icon">
-							<use href="./images/icons.svg#icon-email"></use>
-						</svg>
-						info@devstudio.com</a>
-				</li>
-				<li class="header-contacts__li">
-					<a href="#" class="header-contacts__item">
-						<svg width="18" height="14" class="mail-icon">
-							<use href="./images/icons.svg#icon-phone"></use>
-						</svg>
+
+			<button type="button" class="menu-button" data-menu-button>
+				<svg aria-label="переключатель мобильного меню" width="40" height="40">
+					<use class="icon-menu" href="/images/icons.svg#icon-header-menu"></use>
+					<use class="icon-cross" href="/images/icons.svg#icon-header-cross"></use>
+				</svg>
+			</button>
+
+			<div class="menu-container" data-menu>
+				<nav class="header-nav">
+					<ul class="header-list__nav">
+						<li class="header-list__li"><a href="./index.html" class="header-list__item">Студия</a></li>
+						<li class="header-list__li"><a href="./portfolio.html" class="header-list__item current">Портфолио</a></li>
+						<li class="header-list__li"><a href="#" class="header-list__item">Контакты</a></li>
+					</ul>
+				</nav>
+				<ul class="header-contacts">
+					<li class="header-contacts__li first">
+						<a href="#" class="header-contacts__item chosen">
+							<svg width="16" height="10" class="mail-icon">
+								<use href="./images/icons.svg#icon-email"></use>
+							</svg>
+							info@devstudio.com
+							</a>
+					</li>
+					<li class="header-contacts__li last">
+						<a href="#" class="header-contacts__item">
+							<svg width="18" height="14" class="mail-icon">
+								<use href="./images/icons.svg#icon-phone"></use>
+							</svg>
 						+38 096 111 11 11</a>
-				</li>
-			</ul>
+					</li>
+				</ul>
+				<ul class="header-soc">
+					<li class="header-soc__li"><a href="#" class="header-soc__item">Instagram</a></li>
+					<li class="header-soc__li"><a href="#" class="header-soc__item">Twitter</a></li>
+					<li class="header-soc__li"><a href="#" class="header-soc__item">Facebook</a></li>
+					<li class="header-soc__li"><a href="#" class="header-soc__item">LinkedIn</a></li>
+				</ul>
+			</div>
+
 		</div>
 	</header>
 
@@ -76,7 +94,7 @@
 					<li class="shop-list__li">
 						<a href="#" class="shop-list__item">
 							<div class="shop-thumb">
-								<img class="shop-thumb__img" width="370" height="294" src="./images/portfolio/img1.jpg"
+								<img class="shop-thumb__img" src="./images/portfolio/img1.jpg"
 									alt="Ноутбук">
 								<p class="shop-thumb__hover">
 									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
@@ -89,10 +107,11 @@
 							</div>
 						</a>
 					</li>
+
 					<li class="shop-list__li">
 						<a href="#" class="shop-list__item">
 							<div class="shop-thumb">
-								<img width="370" height="294" src="./images/portfolio/img2.jpg" alt="Постер">
+								<img class="shop-thumb__img" src="./images/portfolio/img2.jpg" alt="Постер">
 								<p class="shop-thumb__hover">
 									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -104,10 +123,11 @@
 							</div>
 						</a>
 					</li>
+
 					<li class="shop-list__li">
 						<a href="#" class="shop-list__item">
 							<div class="shop-thumb">
-								<img width="370" height="294" src="./images/portfolio/img3.jpg" alt="Ресторан">
+								<img class="shop-thumb__img" src="./images/portfolio/img3.jpg" alt="Ресторан">
 								<p class="shop-thumb__hover">
 									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -119,10 +139,11 @@
 							</div>
 						</a>
 					</li>
+
 					<li class="shop-list__li">
 						<a href="#" class="shop-list__item">
 							<div class="shop-thumb">
-								<img width="370" height="294" src="./images/portfolio/img4.jpg" alt="Наушники">
+								<img class="shop-thumb__img" src="./images/portfolio/img4.jpg" alt="Наушники">
 								<p class="shop-thumb__hover">
 									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -134,10 +155,11 @@
 							</div>
 						</a>
 					</li>
+
 					<li class="shop-list__li">
 						<a href="#" class="shop-list__item">
 							<div class="shop-thumb">
-								<img width="370" height="294" src="./images/portfolio/img5.jpg" alt="Посылки">
+								<img class="shop-thumb__img" src="./images/portfolio/img5.jpg" alt="Посылки">
 								<p class="shop-thumb__hover">
 									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -149,10 +171,11 @@
 							</div>
 						</a>
 					</li>
+
 					<li class="shop-list__li">
 						<a href="#" class="shop-list__item">
 							<div class="shop-thumb">
-								<img width="370" height="294" src="./images/portfolio/img6.jpg" alt="Монитор">
+								<img class="shop-thumb__img" src="./images/portfolio/img6.jpg" alt="Монитор">
 								<p class="shop-thumb__hover">
 									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -164,10 +187,11 @@
 							</div>
 						</a>
 					</li>
+
 					<li class="shop-list__li">
 						<a href="#" class="shop-list__item">
 							<div class="shop-thumb">
-								<img width="370" height="294" src="./images/portfolio/img7.jpg" alt="Книга">
+								<img class="shop-thumb__img" src="./images/portfolio/img7.jpg" alt="Книга">
 								<p class="shop-thumb__hover">
 									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -179,10 +203,11 @@
 							</div>
 						</a>
 					</li>
+
 					<li class="shop-list__li">
 						<a href="#" class="shop-list__item">
 							<div class="shop-thumb">
-								<img width="370" height="294" src="./images/portfolio/img8.jpg" alt="Бирка">
+								<img class="shop-thumb__img" src="./images/portfolio/img8.jpg" alt="Бирка">
 								<p class="shop-thumb__hover">
 									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -194,10 +219,11 @@
 							</div>
 						</a>
 					</li>
+
 					<li class="shop-list__li">
 						<a href="#" class="shop-list__item">
 							<div class="shop-thumb">
-								<img width="370" height="294" src="./images/portfolio/img9.jpg" alt="Сайт">
+								<img class="shop-thumb__img" src="./images/portfolio/img9.jpg" alt="Сайт">
 								<p class="shop-thumb__hover">
 									Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 									позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -209,6 +235,7 @@
 							</div>
 						</a>
 					</li>
+
 				</ul>
 			</div>
 		</section>
@@ -261,7 +288,8 @@
 					<p class="footer-block3__text">Подпишитесь на рассылку</p>
 					<form class="footer-block3__form">
 						<input type="footer-block3__email" class="footer-block3__input" placeholder="E-mail">
-						<button class="btn footer-btn" type="submit">Подписаться
+						<button class="btn footer-btn" type="submit">
+							<span class="btn-text">Подписаться</span>
 							<svg class="footer-block3__btnicon">
 								<use href="./images/icons.svg#icon-telegram1"></use>
 							</svg>
@@ -271,6 +299,7 @@
 
 		</div>
 	</footer>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
