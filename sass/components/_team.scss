@@ -28,9 +28,6 @@
 		flex-wrap: wrap;
 		margin: 15px -15px -15px -15px;
 	}
-	@media (min-width: 1200px){
-		height: 622px;
-	}
 }
 
 .worker:not(:last-child) {
@@ -46,6 +43,10 @@
 		&:nth-last-child(-n + 2){
 			margin-bottom: 0;
 		}
+	}
+	@media (min-width: 1200px){
+		width: 270px;
+		height: 428px;
 	}
 }
 
