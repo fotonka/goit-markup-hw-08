@@ -27,12 +27,14 @@
 }
 
 .footer-block {
+	margin-bottom: 60px;
 	@media (min-width: 768px) and (max-width: 1199px){
 		margin-right: 165px;
 		margin-left: 76px;
 	}
 	@media (min-width: 1200px){
 		margin-right: 70px;
+		margin-bottom: 0;
 	}
 }
 
@@ -68,13 +70,6 @@
 
 .footer-block__email{
 	margin-bottom: 8px;
-}
-
-.footer-block__tel{
-	margin-bottom: 60px;
-	@media (min-width: 1200px){
-		margin-bottom: 0;
-	}
 }
 
 .footer-block__email,

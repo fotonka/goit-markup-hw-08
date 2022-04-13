@@ -52,19 +52,6 @@
 	}
 }
 
-.team__img{
-	width: 100%;
-	@media (max-width: 767px){
-		height: 460px;
-	}
-	@media (min-width: 768px){
-		height: 374px;
-	}
-	@media (min-width: 1200px){
-		height: 260px;
-	}
-}
-
 .team-list__div {
 	padding-top: 30px;
 }

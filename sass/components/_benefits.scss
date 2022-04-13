@@ -13,7 +13,6 @@
 }
 
 .benefits-list__li{
-	margin-bottom: 30px;
 	@media(min-width:768px)  and (max-width: 1199px){
 		width: 354px;
 		&:nth-child(odd){
@@ -29,6 +28,14 @@
 		margin-bottom: 0;
 		&:not(:last-child){
 			margin-right: 30px;
+		}
+	}
+	@media(min-width: 768px){
+		margin-bottom: 30px;
+	}
+	@media(max-width: 767px){
+		&:not(:last-child){
+			margin-bottom: 30px;
 		}
 	}
 }

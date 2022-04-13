@@ -81,7 +81,7 @@
 	margin-top: 4px;
 	color: $mainColor;
 	padding-left: 42px;
-	transition: outline, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: outline, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:focus {
 		background-color: $mainLightColor;
 		outline: 1px solid $accentColor;
