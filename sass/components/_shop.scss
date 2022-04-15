@@ -27,6 +27,7 @@
 	}
 
 	@media(min-width: 768px){
+		flex-grow: 1;
 		margin: 15px;
 		width: calc((100% - 2 * 30px) / 2);
 	}
@@ -76,6 +77,10 @@
 	.shop-list__item:focus &{
 		opacity: 1;
 		transform: translateY(0);
+	}
+
+	@media(max-width: 767px){
+		overflow: scroll;
 	}
 }
 

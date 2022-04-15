@@ -33,6 +33,10 @@
 		width: 528px;
 		height: 581px;
 	}
+	@media (max-width: 460px){
+		width: 300px;
+		height: auto;
+	}
 }
 
 .modal__button {
