@@ -39,7 +39,7 @@
 }
 
 .worker{
-	@media (min-width: 768px){
+	@media (min-width: 768px) and (max-width: 1199px){
 		width: 354px;
 		&:nth-last-child(-n + 2){
 			margin-bottom: 0;
