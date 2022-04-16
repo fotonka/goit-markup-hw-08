@@ -493,8 +493,8 @@ h6 {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/bg-main.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/bg-main.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-main.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-main.jpg");
   background-repeat: no-repeat;
 }
 
@@ -508,14 +508,14 @@ h6 {
   .hero {
     max-width: 768px;
     height: 400px;
-    background-image: url("../../images/tablet-main__bg.jpg");
+    background-image: url("../images/tablet-main__bg.jpg");
   }
 }
 
 @media (max-width: 767px) {
   .hero {
     max-width: 480px;
-    background-image: url("../../images/phone-main__bg.jpg");
+    background-image: url("../images/phone-main__bg.jpg");
   }
 }
 
