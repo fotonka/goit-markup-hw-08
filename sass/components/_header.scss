@@ -9,16 +9,15 @@
 
 .menu-container{
 	@media(max-width: 767px){
+		margin: 0 auto;
 		width: 100%;
+		height: 100vh;
 		z-index: 1;
 		display: none;
 		background-color: $mainLightColor;
 		position: fixed;
 		left: 0;
-		margin: 0 auto;
-		height: 100vh;
 		padding: 48px 40px;
-		overflow: scroll;
 		&.is-open{
 			display: flex;
 			flex-direction: column;

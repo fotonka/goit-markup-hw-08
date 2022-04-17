@@ -4,12 +4,11 @@
 		flex-wrap: wrap;
 		margin: -15px;
 	}
-	@media(min-width: 768px) and (max-width: 1199px){
-
-	}
 }
 
 .shop-list__li {
+	display: flex;
+	flex-direction: column;
 	border-right: 1px solid $cardColor;
 	border-bottom: 1px solid $cardColor;
 	border-left: 1px solid $cardColor;
@@ -44,6 +43,7 @@
 
 .shop-list__item{
 	display: block;
+	flex-grow: 1;
 	
 }
 
