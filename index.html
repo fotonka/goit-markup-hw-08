@@ -26,48 +26,50 @@
 				Web<span class="logo-span">Studio</span>
 			</a>
 
-			<button type="button" class="menu-button" data-menu-button>
+			<button type="button" class="menu-button" data-menu-open>
 				<svg aria-label="переключатель мобильного меню" width="40" height="40">
 					<use class="icon-menu" href="./images/icons.svg#icon-header-menu"></use>
 				</svg>
 			</button>
 
 			<div class="menu-container" data-menu>
-				<button type="button" class="menu-container__button" data-menu-button>
-					<svg aria-label="переключатель мобильного меню" width="40" height="40">
-						<use class="icon-cross" href="./images/icons.svg#icon-header-cross"></use>
-					</svg>
-				</button>
-				<nav class="header-nav">
-					<ul class="header-list__nav">
-						<li class="header-list__li"><a href="./index.html" class="header-list__item current">Студия</a></li>
-						<li class="header-list__li"><a href="./portfolio.html" class="header-list__item ">Портфолио</a></li>
-						<li class="header-list__li"><a href="#" class="header-list__item">Контакты</a></li>
+				<div class="menu-mobile">
+					<button type="button" class="menu-container__button" data-menu-close>
+						<svg aria-label="переключатель мобильного меню" width="40" height="40">
+							<use class="icon-cross" href="./images/icons.svg#icon-header-cross"></use>
+						</svg>
+					</button>
+					<nav class="header-nav">
+						<ul class="header-list__nav">
+							<li class="header-list__li"><a href="./index.html" class="header-list__item current">Студия</a></li>
+							<li class="header-list__li"><a href="./portfolio.html" class="header-list__item ">Портфолио</a></li>
+							<li class="header-list__li"><a href="#" class="header-list__item">Контакты</a></li>
+						</ul>
+					</nav>
+					<ul class="header-contacts">
+						<li class="header-contacts__li first">
+							<a href="#" class="header-contacts__item chosen">
+								<svg width="16" height="10" class="mail-icon">
+									<use href="./images/icons.svg#icon-email"></use>
+								</svg>
+								info@devstudio.com
+								</a>
+						</li>
+						<li class="header-contacts__li last">
+							<a href="#" class="header-contacts__item second">
+								<svg width="18" height="14" class="mail-icon">
+									<use href="./images/icons.svg#icon-phone"></use>
+								</svg>
+							+38 096 111 11 11</a>
+						</li>
 					</ul>
-				</nav>
-				<ul class="header-contacts">
-					<li class="header-contacts__li first">
-						<a href="#" class="header-contacts__item chosen">
-							<svg width="16" height="10" class="mail-icon">
-								<use href="./images/icons.svg#icon-email"></use>
-							</svg>
-							info@devstudio.com
-							</a>
-					</li>
-					<li class="header-contacts__li last">
-						<a href="#" class="header-contacts__item second">
-							<svg width="18" height="14" class="mail-icon">
-								<use href="./images/icons.svg#icon-phone"></use>
-							</svg>
-						+38 096 111 11 11</a>
-					</li>
-				</ul>
-				<ul class="header-soc">
-					<li class="header-soc__li"><a href="#" class="header-soc__item">Instagram</a></li>
-					<li class="header-soc__li"><a href="#" class="header-soc__item">Twitter</a></li>
-					<li class="header-soc__li"><a href="#" class="header-soc__item">Facebook</a></li>
-					<li class="header-soc__li"><a href="#" class="header-soc__item">LinkedIn</a></li>
-				</ul>
+					<ul class="header-soc">
+						<li class="header-soc__li"><a href="#" class="header-soc__item">Instagram</a></li>
+						<li class="header-soc__li"><a href="#" class="header-soc__item">Twitter</a></li>
+						<li class="header-soc__li"><a href="#" class="header-soc__item">Facebook</a></li>
+						<li class="header-soc__li"><a href="#" class="header-soc__item">LinkedIn</a></li>
+					</ul>
+				</div>
 			</div>
 
 		</div>
