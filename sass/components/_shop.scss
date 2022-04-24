@@ -42,9 +42,9 @@
 }
 
 .shop-list__item{
-	display: block;
+	display: flex;
+	flex-direction: column;
 	flex-grow: 1;
-	
 }
 
 .shop-thumb {
@@ -93,6 +93,7 @@
 
 .item-div {
 	padding: 20px;
+	flex-grow: 1;
 }
 
 .item-div__title {
